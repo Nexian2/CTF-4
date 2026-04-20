@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexaShop — Professional Electronics &amp; Peripherals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="promo-bar">Free shipping on orders over $150 &mdash; Use code NEXAFREE at checkout</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">Nexa<span>Shop</span></a>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search products, brands..." autocomplete="off"
+          onkeydown="if(event.key==='Enter') performSearch()">
+        <button onclick="performSearch()">Search</button>
+      </div>
+      <nav class="header-nav">
+        <a href="/" class="active">Home</a>
+        <a href="/search.html">Products</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <h1>Professional Tech,<br><span>Delivered Fast</span></h1>
+      <p>Premium electronics and peripherals engineered for demanding professionals. Curated inventory, verified quality.</p>
+      <div class="hero-cta">
+        <a href="/search.html" class="btn btn-blue btn-lg">Shop All Products</a>
+        <a href="/search.html?category=Laptops" class="btn btn-outline-white btn-lg">View Laptops</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:8px;">
+  <div class="container">
+    <div class="feature-banner">
+      <div class="feature-banner-text">
+        <h3>Trusted by 40,000+ customers</h3>
+        <p>Enterprise-grade hardware at competitive prices, backed by our 30-day return policy.</p>
+      </div>
+      <div class="feature-items">
+        <div class="feature-item">
+          <strong>40k+</strong>
+          <span>Customers</span>
+        </div>
+        <div class="feature-item">
+          <strong>99.2%</strong>
+          <span>Satisfaction</span>
+        </div>
+        <div class="feature-item">
+          <strong>24h</strong>
+          <span>Dispatch</span>
+        </div>
+        <div class="feature-item">
+          <strong>30d</strong>
+          <span>Returns</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="featured">
+  <div class="container">
+    <div class="category-strip">
+      <button class="cat-btn active" onclick="filterCat(this,'all')">All Products</button>
+      <button class="cat-btn" onclick="filterCat(this,'Laptops')">Laptops</button>
+      <button class="cat-btn" onclick="filterCat(this,'Audio')">Audio</button>
+      <button class="cat-btn" onclick="filterCat(this,'Peripherals')">Peripherals</button>
+      <button class="cat-btn" onclick="filterCat(this,'Displays')">Displays</button>
+      <button class="cat-btn" onclick="filterCat(this,'Accessories')">Accessories</button>
+      <button class="cat-btn" onclick="filterCat(this,'Storage')">Storage</button>
+    </div>
+
+    <div class="section-header">
+      <h2 class="section-title" id="gridTitle">Featured Products</h2>
+      <a href="/search.html" class="section-link">View all &rarr;</a>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <div style="padding:40px;text-align:center;color:var(--grey-400);font-size:.875rem;grid-column:1/-1;">
+        Loading products...
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">Nexa<span>Shop</span></a>
+        <p>Your trusted source for professional electronics and computing peripherals since 2019. Serving over 40,000 customers worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/search.html">All Products</a></li>
+          <li><a href="/search.html?category=Laptops">Laptops</a></li>
+          <li><a href="/search.html?category=Audio">Audio</a></li>
+          <li><a href="/search.html?category=Peripherals">Peripherals</a></li>
+          <li><a href="/search.html?category=Storage">Storage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns &amp; Refunds</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About NexaShop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="/login.html">Staff Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 NexaShop Pte. Ltd. All rights reserved.</span>
+      <span>Privacy Policy &mdash; Terms of Service &mdash; Cookie Policy</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
